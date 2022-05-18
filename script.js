@@ -17,26 +17,30 @@ console.log(phoneInput.value);
 
 
 function clickMe() {
-    document.getElementById('errorMessage').innerHTML ='';
+    document.getElementById('errorMessageName').innerHTML ='';
+    document.getElementById('errorMessageSurname').innerHTML ='';
+    document.getElementById('errorMessageEmail').innerHTML ='';
+    document.getElementById('errorMessageReplaypass').innerHTML ='';
+    document.getElementById('errorMessagePhone').innerHTML ='';
 
 if (nameInput.value == ''){
-document.getElementById('errorMessage').innerHTML += 'Имя не заполнено<br>';
+document.getElementById('errorMessageName').innerHTML += 'Имя не заполнено<br>';
 }
 
 else if (surnameInput.value == ''){
-document.getElementById('errorMessage').innerHTML += 'Фамилия не заполнено<br>';
+document.getElementById('errorMessageSurname').innerHTML += 'Фамилия не заполнено<br>';
 }
 
 else if (emailInput.value == ''){
-document.getElementById('errorMessage').innerHTML += 'Email не заполнено<br>';
+document.getElementById('errorMessageEmail').innerHTML += 'Email не заполнено<br>';
 }
 
 else if (replaypassInput.value == ''){
-document.getElementById('errorMessage').innerHTML += 'Пароль не заполнен<br>';
+document.getElementById('errorMessageReplaypass').innerHTML += 'Пароль не заполнен<br>';
  }
 
 else if (phoneInput.value == ''){
-document.getElementById('errorMessage').innerHTML += 'Телефон не заполнен<br>';
+document.getElementById('errorMessagePhone').innerHTML += 'Телефон не заполнен<br>';
 }
 else alert('Добро пожаловать!' + nameInput.value );
 }

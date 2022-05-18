@@ -3,11 +3,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
 }
 
@@ -16,7 +16,7 @@ body {
   padding: 30px;
   border-radius: 10px;
   -webkit-box-shadow: 0 6px 20px #dc9ee0;
-          box-shadow: 0 6px 20px #dc9ee0;
+  box-shadow: 0 6px 20px #dc9ee0;
   font-family: sans-serif;
   letter-spacing: 1px;
 }
@@ -32,7 +32,10 @@ body {
   margin-bottom: 32px;
 }
 
-.form__input-name, .form__input-pass, .form__input-email, .form__input-phone {
+.form__input-name,
+.form__input-pass,
+.form__input-email,
+.form__input-phone {
   font-family: sans-serif;
   letter-spacing: 1px;
   font-size: 15px;
@@ -46,11 +49,17 @@ body {
   transition: 0.3s;
 }
 
-.form__input-name:focus, .form__input-pass:focus, .form__input-email:focus, .form__input-phone:focus {
+.form__input-name:focus,
+.form__input-pass:focus,
+.form__input-email:focus,
+.form__input-phone:focus {
   border-bottom: 1px solid #580f7c;
 }
 
-.form__label-name, .form__label-pass, .form__label-email, .form__label-phone {
+.form__label-name,
+.form__label-pass,
+.form__label-email,
+.form__label-phone {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -75,11 +84,18 @@ body {
   margin-left: 45px;
 }
 
-.form__button:focus, .form__button:hover {
+.form__button:focus,
+.form__button:hover {
   background-color: blueviolet;
 }
 
-.form #errorMessage {
+#errorMessageName,
+#errorMessageSurname,
+#errorMessageEmail,
+#errorMessageReplaypass,
+#errorMessagePhone {
   color: red;
+
 }
+
 /*# sourceMappingURL=style.css.map */
