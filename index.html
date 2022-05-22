@@ -13,32 +13,33 @@
     <form name="registrForm" action="#" class="form">
         <h1 class="form__title">Регистрация</h1>
         <div class="form__group">
-            <input class="form__input-name" id="name" type="text">
+            <input class="form__input-name" name="formInput" id="name" type="text">
             <label class="form__label-name" for="name">Имя</label>
             <div id="errorMessageName"></div>
         </div>
         <div class="form__group">
-            <input class="form__input-name" id="surname" type="text">
+            <input class="form__input-name" name="formInput" id="surname" type="text">
             <label class="form__label-name" for="surname">Фамилия</label>
             <div id="errorMessageSurname"></div>
         </div>
         <div class="form__group">
-            <input class="form__input-email" id="email" type="email">
+            <input class="form__input-email" name="formInput" id="email" type="email">
             <label class="form__label-email" for="email">Email</label>
             <div id="errorMessageEmail"></div>
         </div>
         <div class="form__group">
-            <input class="form__input-pass" id="replaypass" type="password">
+            <input class="form__input-pass" name="formInput" id="replaypass" type="password">
             <label class="form__label-pass" for="replaypass">Пароль</label>
             <div id="errorMessageReplaypass"></div>
         </div>
         <div class="form__group">
-            <input class="form__input-phone" id="phone" type="tel">
+            <input class="form__input-phone" name="formInput" id="phone" type="tel">
             <label class="form__label-phone" for="phone">Телефон</label>
             <div id="errorMessagePhone"></div>
         </div>
 
-        <p><input class="form__button" type="button" value="Зарегестрироваться" onclick="clickMe()"></p>
+        <p><input class="form__button" name="formInput" type="button" value="Зарегестрироваться" onclick="clickMe()">
+        </p>
 
     </form>
     <script src="./script.js"></script>

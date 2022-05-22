@@ -13,7 +13,7 @@ console.log(replaypassInput.value);
 let phoneInput = document.getElementById('phone');
 console.log(phoneInput.value);
 
-
+let input = document.querySelectorAll(".formInput");
 
 
 function clickMe() {
