@@ -13,34 +13,28 @@
     <form name="registrForm" action="#" class="form">
         <h1 class="form__title">Регистрация</h1>
         <div class="form__group">
-            <input class="form__input-name" name="formInput" id="name" type="text">
-            <label class="form__label-name" for="name">Имя</label>
-            <div id="errorMessageName"></div>
+            <input class="form__input-name" name="formInput" id="name" type="text" placeholder="Имя"
+                pattern="^[А-Яа-яЁё\s]+$" required>
         </div>
         <div class="form__group">
-            <input class="form__input-name" name="formInput" id="surname" type="text">
-            <label class="form__label-name" for="surname">Фамилия</label>
-            <div id="errorMessageSurname"></div>
+            <input class="form__input-name" name="formInput" id="surname" type="text" placeholder="Фамилия" required
+                pattern="^[А-Яа-яЁё\s]+$">
         </div>
         <div class="form__group">
-            <input class="form__input-email" name="formInput" id="email" type="email">
-            <label class="form__label-email" for="email">Email</label>
-            <div id="errorMessageEmail"></div>
-        </div>
-        <div class="form__group">
-            <input class="form__input-pass" name="formInput" id="replaypass" type="password">
-            <label class="form__label-pass" for="replaypass">Пароль</label>
-            <div id="errorMessageReplaypass"></div>
-        </div>
-        <div class="form__group">
-            <input class="form__input-phone" name="formInput" id="phone" type="tel">
-            <label class="form__label-phone" for="phone">Телефон</label>
-            <div id="errorMessagePhone"></div>
-        </div>
+            <input class="form__input-email" name="formInput" id="email" type="email" placeholder="Email" required>
 
+        </div>
+        <div class="form__group">
+            <input class="form__input-pass" name="formInput" id="replaypass" type="password"
+                autocomplete="current-password" placeholder="Пароль" minlength="6" maxlength="13" required>
+        </div>
+        <div class="form__group">
+            <input class="form__input-phone" name="formInput" id="phone" type="tel" placeholder="Телефон" required
+                pattern="^[0-9]+$" maxlength="11">
+        </div>
         <p><input class="form__button" name="formInput" type="button" value="Зарегестрироваться" onclick="clickMe()">
         </p>
-
+        <div id="error"></div>
     </form>
     <script src="./script.js"></script>
 </body>
