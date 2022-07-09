@@ -81,5 +81,25 @@ function clickMe(){
     }
    document.querySelector('#error').innerHTML = errors.join('.<br>')
   
-   
+   let user = {
+    name: document.getElementById('name').value,
+    surname: document.getElementById('surname').value,
+    email: document.getElementById('email').value,
+    password: document.getElementById('replaypass').value,
+    phone: document.getElementById('phone').value
+   }
+   console.log(user);
+   fetch("https://httpbin.org/post",{
+    method: 'POST',
+    body: JSON.stringify(user),
+    headers: {
+        'Content-Type': 'application/json; charset=utf-8'
+    },
+   })
+   .then(response => response.json())
+   .then(user =>{
+    console.log(user);
+   })
+   .catch(error => console.log(error));
 }
+
